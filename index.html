@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="512x512">
+  
+  <title>Hai Anh's Music Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: #fef7f7;
+      color: #5a4a4a;
+    }
+
+       header {
+      background: #ffeef5;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #f4a5b3;
+      position: relative;
+      top: 0;
+      left: 15%;
+      width: 70%;
+    }
+    
+        .logo {
+      position: absolute;
+      left: 30px;
+      top: 40px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+    }
+    
+    .logo a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .logo a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    header h1 {
+      color: #a64d6d;
+    }
+
+        nav {
+      background: #fce7eb;
+      border: 1px solid #ff7c94;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      left: 15%;
+      width: 70%;
+    }
+    
+    nav a {
+      color: #f4a5b3;
+      padding: 5px 10px;      text-decoration: none;
+    }
+
+    .page-wrapper {
+      width: 100%;
+    }
+    
+        .sidebar {
+      position: fixed;
+      top: 0;
+      width: 15%;
+      height: 100%;
+      background: #ffeef5;
+      padding: 10px;
+    }
+
+        .container {
+      padding: 20px;     
+      width: 70%;
+      margin: auto;
+      position: relative;
+    }
+
+    .content-card {
+      background: #fff5f8;
+      padding: 20px;
+      border: 1px solid #f4a5b3;
+    }
+    
+    .content-card h2 {
+      color: #8b6a6a;
+    }
+
+    #home {
+      display: block;
+    }
+    
+    .artists-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .artists-table td {
+      width: 33.33%;
+      padding: 10px;
+      vertical-align: top;
+    }
+    
+    .artist-card {
+      background: #fff5f8;
+      border: 1px solid #f4a5b3;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .artist-thumb {
+      background: #fce7eb;
+      color: #f4a5b3;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    
+    .artist-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .artist-name {
+      color: #8b6a6a;
+    }
+    
+    .song-count {
+      color: #a78b8b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://cdn-icons-png.freepik.com/512/9280/9280598.png" alt="Logo">
+      </a>
+    </div>
+    <h1>Hai Anh's Music Blog</h1>
+    <p>featuring fav songs of all time &lt;3</p>
+  </header>
+
+  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+    <a href="lienhe.html">Liên hệ</a>
+</nav>
+
+  <table class="page-wrapper" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <!-- Left sidebar - Advertisement -->
+      <td class="sidebar">
+        <a href="https://guitartuna.com/online-guitar-tuner">
+        <div class="ad-box">
+            <img src="quangcao4.png" alt="Ad" style="width: 100%; height:auto;">
+        </div>
+        </a>
+      </td>
+
+      <!-- Main content -->
+      <td class="container">
+        <!-- Home page - Artists list -->
+        <div class="content-card">
+          <div id="home">
+            <h2 style="color: #8b6a6a; margin: 20px 0;">Các ca sĩ</h2>
+            <p style="color: #a78b8b; margin-bottom: 20px;">Click vào ca sĩ để xem danh sách bài hát.</p>
+            
+            <table class="artists-table">
+            <tr>
+              <td>
+                <a href="anson-seabra.html" style="text-decoration: none;">
+                  <div class="artist-card">
+                    <div class="artist-thumb">
+                      <img src="https://cms.koko.co.uk/wp-content/uploads/2023/11/ansonseabra-sq.png" alt="Anson Seabra">
+      </div>
+                    <div class="artist-name">Anson Seabra</div>
+                    <div class="song-count">3 bài hát</div>
+      </div>
+                </a>
+              </td>
+              <td>
+                <a href="cahoihoang.html" style="text-decoration: none;">
+                  <div class="artist-card">
+                    <div class="artist-thumb">
+                      <img src="https://images2.thanhnien.vn/528068263637045248/2023/4/15/band4-1681536779588907182900.jpg" alt="Ca Hoi Hoang">
+  </div>
+                    <div class="artist-name">Ca Hoi Hoang</div>
+                    <div class="song-count">3 bài hát</div>
+          </div>
+                </a>
+              </td>
+              <td>
+                <a href="nguyen-hung.html" style="text-decoration: none;">
+                  <div class="artist-card">
+                    <div class="artist-thumb">
+                      <img src="https://cdn2.tuoitre.vn/zoom/700_525/471584752817336320/2025/9/3/nguyen-hung-4-1756872617159975748680-378-60-1394-2000-crop-17568732433812080742990.jpg" alt="Nguyễn Hùng">
+        </div>
+                    <div class="artist-name">Nguyễn Hùng</div>
+                    <div class="song-count">3 bài hát</div>
+        </div>
+                </a>
+              </td>
+            </tr>
+          </table>
+          </div>
+        </div>
+      </td>
+
+      <!-- Right sidebar - Advertisement -->
+          <td class="sidebar">
+            <a href="https://hopamchuan.com">
+          <div class="ad-box">
+          <img src="quangcao2.png" alt="Ad" style="width: 100%; height:auto;">
+          </div>
+          </a>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
